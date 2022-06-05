@@ -1,0 +1,43 @@
+<%- include ('partials/header') %>
+
+    <body>
+
+
+        <%- include ('partials/navbar') %>
+
+
+            <div class="container">
+
+                <div class="card mt-4">
+
+                    <div class="card-header">
+                        <h3 class="text-center mb-4 mt-4">Realizar Pergunta</h3>
+                    </div>
+
+                    <div class="card-body">
+
+
+                        <form method="POST" action="/salvarpergunta">
+                            <input class="form-control mb-4" type="text" name="titulo" id="titulo" placeholder="Título">
+
+
+                            <textarea placeholder="Digite sua pergunta aqui!" name="descricao" id="" cols="30" rows="5"
+                                class="form-control">
+                            </textarea>
+
+                            <div class="d-flex justify-content-center">
+                                <button class="btn btn-primary mt-4 w-25 ">Perguntar</button>
+                            </div>
+
+                        </form>
+
+                    </div>
+                </div>
+
+
+            </div>
+
+
+    </body>
+
+    <%- include ('partials/footer') %>
